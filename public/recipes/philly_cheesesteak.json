@@ -1,0 +1,27 @@
+{
+  "recipe_id": "philly_cheesesteak",
+  "name": "Philly Cheesesteak",
+  "add_to_grocery_list": false,
+  "meal_type": "Entrees",
+  "label": "American",
+  "time": { "value": 65, "unit": "mins" },
+  "servings": 4,
+  "ingredients": [
+    { "name": "Vegetable oil", "quantity": "2 tablespoons" },
+    { "name": "Bell peppers, sliced", "quantity": "2" },
+    { "name": "Onion, sliced", "quantity": "1" },
+    { "name": "Salt", "quantity": "to taste" },
+    { "name": "Black pepper", "quantity": "to taste" },
+    { "name": "Ribeye steak, thinly sliced", "quantity": "1 pound" },
+    { "name": "Provolone cheese slices", "quantity": "4 slices" },
+    { "name": "Hoagie rolls", "quantity": "4" }
+  ],
+  "instructions": [
+    "In a large skillet over medium heat, heat 1 tablespoon oil. Add bell peppers and onion; season with salt. Cook, stirring often, until caramelized, about 12 to 15 minutes. Transfer bell peppers and onion to a plate.",
+    "In the same skillet over medium-high heat, heat remaining 1 tablespoon oil. Cook steak, turning occasionally, until desired degree of doneness, about 5 minutes; season with salt and pepper.",
+    "Return veggies to skillet and toss to combine with steak. Top with provolone. Cover and cook until cheese is melted, about 3 minutes more.",
+    "Using a serrated knife, cut into the long side of each roll, being sure not to cut all the way through. Divide cheesesteak mixture among rolls and serve."
+  ],
+  "image_url": "",
+  "tags": ["sandwich", "classic", "beef"]
+}

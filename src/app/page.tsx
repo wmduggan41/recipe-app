@@ -23,10 +23,22 @@ export default function Home() {
   useEffect(() => {
     async function fetchRecipes() {
       try {
-        const response = await fetch("/recipes/chicken_alfredo_pasta.json");
-        if (!response.ok) throw new Error("Failed to fetch recipe");
-        const data = await response.json();
-        setRecipes([data]); // Store recipe as an array for future expansion
+        // Fetch the list of recipe files from recipeList.json
+        const response = await fetch("/recipes/recipeList.json");
+        if (!response.ok) throw new Error("Failed to fetch recipe list");
+
+        const { recipes: recipeFiles }: { recipes: string[] } = await response.json();
+
+        // Fetch each recipe JSON file
+        const loadedRecipes = await Promise.all(
+          recipeFiles.map(async (file) => {
+            const recipeResponse = await fetch(`/recipes/${file}`);
+            if (!recipeResponse.ok) throw new Error(`Failed to fetch ${file}`);
+            return recipeResponse.json();
+          })
+        );
+
+        setRecipes(loadedRecipes);
       } catch (error) {
         console.error("Error fetching recipes:", error);
       }
@@ -38,7 +50,7 @@ export default function Home() {
     <div className="grid grid-rows-[auto_1fr_auto] items-center justify-items-center min-h-screen p-8 sm:p-20">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start w-full max-w-3xl">
         <h1 className="text-3xl font-bold">Recipe List</h1>
-        
+
         {recipes.length > 0 ? (
           recipes.map((recipe) => (
             <div key={recipe.recipe_id} className="border border-gray-300 rounded-lg p-6 bg-white shadow-md w-full">

@@ -1,0 +1,41 @@
+{
+  "recipe_id": "one_pan_chicken_orzo",
+  "name": "One-Pan Lemon Chicken & Orzo",
+  "add_to_grocery_list": false,
+  "meal_type": "Entrees",
+  "label": "Mediterranean",
+  "time": { "value": 45, "unit": "mins" },
+  "servings": 4,
+  "ingredients": [
+    { "name": "Chicken thighs, bone-in, skin-on", "quantity": "4" },
+    { "name": "Salt", "quantity": "3 teaspoons, divided" },
+    { "name": "Black pepper", "quantity": "to taste" },
+    { "name": "Olive oil", "quantity": "2 tablespoons" },
+    { "name": "Shallots, finely chopped", "quantity": "2" },
+    { "name": "Unsalted butter", "quantity": "2 tablespoons" },
+    { "name": "Orzo", "quantity": "1 cup" },
+    { "name": "Garlic cloves, minced", "quantity": "2" },
+    { "name": "Capers", "quantity": "1 tablespoon" },
+    { "name": "White wine", "quantity": "1/4 cup" },
+    { "name": "Chicken broth", "quantity": "2 cups" },
+    { "name": "Baby spinach", "quantity": "2 cups" },
+    { "name": "Heavy cream", "quantity": "1/4 cup" },
+    { "name": "Feta cheese, crumbled", "quantity": "1/2 cup" },
+    { "name": "Lemon zest", "quantity": "from 1 lemon" },
+    { "name": "Lemon juice", "quantity": "2 tablespoons" },
+    { "name": "Fresh dill, chopped", "quantity": "1 tablespoon" },
+    { "name": "Fresh parsley, chopped", "quantity": "1 tablespoon" }
+  ],
+  "instructions": [
+    "Preheat oven to 400°F. Pat chicken dry with paper towels; season with pepper and 1 teaspoon salt.",
+    "In a large, high-sided, ovenproof skillet over medium-high heat, heat oil until shimmering. Arrange chicken skin side down in skillet in a single layer. Cook, undisturbed, until skin is golden brown, about 8 to 10 minutes. Flip and cook until the second side is golden brown, about 2 minutes. Transfer to a plate.",
+    "Reduce heat to medium. Cook shallots and butter, stirring, until softened, about 3 to 4 minutes.",
+    "Add orzo, garlic, and capers; season with remaining 2 teaspoons salt. Cook, stirring often, until orzo is lightly toasted and fragrant, about 2 to 3 minutes.",
+    "Add wine and scrape up any browned bits from the bottom of the pan. Pour in broth and bring to a simmer. Cook, stirring frequently to prevent sticking, until liquid is slightly reduced, about 5 minutes.",
+    "Stir in spinach and cream until spinach is wilted. Return chicken to pan skin side up, along with any accumulated juices.",
+    "Transfer skillet to oven and bake, uncovered, until chicken is cooked through and orzo is tender, about 15 minutes.",
+    "Top with feta, lemon zest, lemon juice, dill, and parsley before serving."
+  ],
+  "image_url": "",
+  "tags": ["one-pan", "chicken", "orzo", "dinner"]
+}
