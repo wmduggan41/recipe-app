@@ -1,0 +1,31 @@
+{
+  "recipe_id": "spaghetti_bolognese",
+  "name": "Spaghetti Bolognese",
+  "add_to_grocery_list": false,
+  "meal_type": "Entrees",
+  "label": "Italian",
+  "time": { "value": 45, "unit": "mins" },
+  "servings": 4,
+  "ingredients": [
+    { "name": "Spaghetti", "quantity": "12 ounces" },
+    { "name": "Ground beef", "quantity": "1 pound" },
+    { "name": "Onion", "quantity": "1, diced" },
+    { "name": "Garlic", "quantity": "2 cloves, minced" },
+    { "name": "Tomato paste", "quantity": "2 tablespoons" },
+    { "name": "Canned tomatoes", "quantity": "1 can (28 ounces)" },
+    { "name": "Italian seasoning", "quantity": "1 teaspoon" },
+    { "name": "Salt", "quantity": "to taste" },
+    { "name": "Black pepper", "quantity": "to taste" }
+  ],
+  "instructions": [
+    "Cook spaghetti according to package instructions.",
+    "In a pan, cook ground beef until browned. Drain excess fat.",
+    "Add onion and garlic, sauté until soft.",
+    "Stir in tomato paste and cook for 1 minute.",
+    "Pour in canned tomatoes, Italian seasoning, salt, and pepper.",
+    "Simmer for 20 minutes, stirring occasionally.",
+    "Serve sauce over cooked spaghetti."
+  ],
+  "image_url": "",
+  "tags": ["pasta", "dinner", "comfort food"]
+}
