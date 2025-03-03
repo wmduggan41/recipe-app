@@ -1,0 +1,38 @@
+{
+  "recipe_id": "chicken_alfredo_pasta",
+  "name": "Chicken Alfredo Pasta",
+  "add_to_grocery_list": false,
+  "meal_type": "Entrees",
+  "label": "Italian",
+  "time": {
+    "value": 40,
+    "unit": "mins"
+  },
+  "servings": 4,
+  "ingredients": [
+    {"name": "Dried fettuccine pasta", "quantity": "8 ounces"},
+    {"name": "Boneless, skinless chicken breasts", "quantity": "2 (about 1 pound total)"},
+    {"name": "Kosher salt", "quantity": "1 teaspoon, divided"},
+    {"name": "Freshly ground black pepper", "quantity": "1/2 teaspoon, divided"},
+    {"name": "Canola oil", "quantity": "2 tablespoons"},
+    {"name": "European-style unsalted butter", "quantity": "8 tablespoons (1 stick), divided"},
+    {"name": "Garlic", "quantity": "2 cloves, minced"},
+    {"name": "Heavy cream", "quantity": "1 cup"},
+    {"name": "Finely grated Parmesan cheese", "quantity": "1 cup (2 1/2 ounces), plus more for serving"},
+    {"name": "Freshly grated nutmeg", "quantity": "1/4 teaspoon"},
+    {"name": "Coarsely chopped fresh parsley leaves", "quantity": "For serving"}
+  ],
+  "instructions": [
+    "Bring a large pot of salted water to a boil and cook the fettuccine according to package instructions until al dente. Drain and set aside.",
+    "Season the chicken breasts with 1/2 teaspoon kosher salt and 1/4 teaspoon black pepper.",
+    "In a large skillet, heat canola oil over medium-high heat. Add the chicken and cook for 5-6 minutes per side, or until golden brown and cooked through. Remove from the skillet and let rest before slicing into strips.",
+    "In the same skillet, melt 6 tablespoons of butter over medium heat. Add minced garlic and sauté until fragrant, about 1 minute.",
+    "Pour in the heavy cream and bring to a simmer. Reduce heat and stir in Parmesan cheese, nutmeg, and the remaining salt and pepper. Cook until the sauce thickens slightly, about 3-4 minutes.",
+    "Add the cooked pasta to the skillet and toss to coat in the sauce.",
+    "Slice the rested chicken and arrange on top of the pasta.",
+    "Garnish with chopped parsley and additional Parmesan cheese before serving."
+  ],
+  "image_url": "",
+  "tags": ["creamy", "comfort food", "dinner", "quick meal"]
+}
+
