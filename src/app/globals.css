@@ -8,6 +8,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary-green: #0b6623; /* Dark Green */
+  --hover-green: #084c19; /* Darker hover effect */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,5 +22,18 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }
+
+h1, h2, h3 {
+  color: var(--primary-green);
+}
+
+a {
+  transition: background-color 0.3s ease-in-out;
+}
+
+a:hover {
+  background-color: var(--hover-green);
+}
+
