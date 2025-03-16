@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import Image from "next/image";
+import Link from "next/link"; // ✅ Import Link for navigation
 
 interface Recipe {
   recipe_id: string;
@@ -60,9 +61,9 @@ export default function RecipePage() {
       </ol>
 
       {/* Back Button */}
-      <a href="/recipes" className="mt-6 inline-block px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-700">
+      <Link href="/recipes" className="mt-6 inline-block px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-700">
         ⬅ Back to Recipes
-      </a>
+      </Link>
     </div>
   );
 }
