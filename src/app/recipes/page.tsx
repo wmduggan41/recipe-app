@@ -1,7 +1,8 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 
 interface Recipe {
@@ -14,7 +15,7 @@ interface Recipe {
   instructions: string[];
 }
 
-export default function RecipeGallery() {
+function RecipeGalleryContent() {
   const [recipes, setRecipes] = useState<Recipe[]>([]);
   const searchParams = useSearchParams();
   const category = searchParams.get("category");
@@ -47,17 +48,22 @@ export default function RecipeGallery() {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
       {recipes.map((recipe) => (
-        <a key={recipe.recipe_id} href={`/recipes/${recipe.recipe_id}`} className="border rounded-lg shadow-md p-4 hover:shadow-lg transition">
+        <Link key={recipe.recipe_id} href={`/recipes/${recipe.recipe_id}`} className="border rounded-lg shadow-md p-4 hover:shadow-lg transition">
           <Image src={recipe.image_url || "/images/placeholder.jpg"} alt={recipe.name} width={300} height={200} className="rounded-lg" />
           <h2 className="text-xl font-semibold mt-2">{recipe.name}</h2>
           <p className="text-sm text-gray-600">{recipe.label} | {recipe.time.value} {recipe.time.unit}</p>
-
-          {/* Indicate that full details are available on click */}
           <p className="text-sm text-blue-600 mt-2">Click to view</p>
-        </a>
+        </Link>
       ))}
     </div>
   );
 }
 
+export default function RecipeGallery() {
+  return (
+    <Suspense fallback={<p className="text-center">Loading recipes...</p>}>
+      <RecipeGalleryContent />
+    </Suspense>
+  );
+}
 
