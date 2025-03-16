@@ -1,9 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useParams } from "next/navigation";
 import Image from "next/image";
-import Link from "next/link"; // ✅ Import Link for navigation
+import Link from "next/link";
 
 interface Recipe {
   recipe_id: string;
@@ -18,10 +17,21 @@ interface Recipe {
 }
 
 export default function RecipePage() {
-  const { recipeId } = useParams();
+  const [recipeId, setRecipeId] = useState<string | null>(null);
   const [recipe, setRecipe] = useState<Recipe | null>(null);
 
+  // Ensure window is available before accessing the pathname
   useEffect(() => {
+    if (typeof window !== "undefined") {
+      const pathParts = window.location.pathname.split("/");
+      const id = pathParts[pathParts.length - 1]; // Extract recipeId from URL
+      setRecipeId(id);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!recipeId) return;
+
     async function fetchRecipe() {
       try {
         const response = await fetch(`/recipes/${recipeId}.json`);
@@ -33,6 +43,7 @@ export default function RecipePage() {
         console.error("Error fetching recipe:", error);
       }
     }
+
     fetchRecipe();
   }, [recipeId]);
 
@@ -67,6 +78,7 @@ export default function RecipePage() {
     </div>
   );
 }
+
 
 
 
