@@ -11,6 +11,7 @@ interface Recipe {
   label: string;
   time: { value: number; unit: string };
   image_url: string;
+  instructions: string[];
 }
 
 export default function RecipeGallery() {
@@ -50,9 +51,13 @@ export default function RecipeGallery() {
           <Image src={recipe.image_url || "/images/placeholder.jpg"} alt={recipe.name} width={300} height={200} className="rounded-lg" />
           <h2 className="text-xl font-semibold mt-2">{recipe.name}</h2>
           <p className="text-sm text-gray-600">{recipe.label} | {recipe.time.value} {recipe.time.unit}</p>
+
+          {/* Indicate that full details are available on click */}
+          <p className="text-sm text-blue-600 mt-2">Click to view</p>
         </a>
       ))}
     </div>
   );
 }
+
 
