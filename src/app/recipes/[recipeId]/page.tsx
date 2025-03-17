@@ -1,8 +1,12 @@
-"use client";
+"use client"; // Ensures this page is fully client-rendered
 
 import { useEffect, useState } from "react";
-import { useParams } from "next/navigation";
+import { useParams } from "next/navigation"; // Correct way to get params in client components
 import Image from "next/image";
+import Link from "next/link";
+
+// 🚀 Force Next.js to dynamically render this page
+export const dynamic = "force-dynamic";
 
 interface Recipe {
   recipe_id: string;
@@ -17,10 +21,12 @@ interface Recipe {
 }
 
 export default function RecipePage() {
-  const { recipeId } = useParams();
+  const { recipeId } = useParams(); // Correct way to get params in client components
   const [recipe, setRecipe] = useState<Recipe | null>(null);
 
   useEffect(() => {
+    if (!recipeId) return; // Ensure recipeId exists before fetching
+
     async function fetchRecipe() {
       try {
         const response = await fetch(`/recipes/${recipeId}.json`);
@@ -32,6 +38,7 @@ export default function RecipePage() {
         console.error("Error fetching recipe:", error);
       }
     }
+
     fetchRecipe();
   }, [recipeId]);
 
@@ -60,12 +67,11 @@ export default function RecipePage() {
       </ol>
 
       {/* Back Button */}
-      <a href="/recipes" className="mt-6 inline-block px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-700">
+      <Link href="/recipes" className="mt-6 inline-block px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-700">
         ⬅ Back to Recipes
-      </a>
+      </Link>
     </div>
   );
 }
-
 
 
