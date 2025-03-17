@@ -1,4 +1,9 @@
+"use client"; // Ensures the homepage is client-rendered
+
 import Link from "next/link";
+
+// 🚀 Force Next.js to dynamically render this page
+export const dynamic = "force-dynamic";
 
 export default function Home() {
   return (

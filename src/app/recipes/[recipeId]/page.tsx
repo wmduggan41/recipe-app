@@ -1,8 +1,12 @@
-"use client";
+"use client"; // Ensures this page is fully client-rendered
 
 import { useEffect, useState } from "react";
+import { useParams } from "next/navigation"; // Use this instead of passing params as a prop
 import Image from "next/image";
 import Link from "next/link";
+
+// Force Next.js to dynamically render this page
+export const dynamic = "force-dynamic";
 
 interface Recipe {
   recipe_id: string;
@@ -17,20 +21,11 @@ interface Recipe {
 }
 
 export default function RecipePage() {
-  const [recipeId, setRecipeId] = useState<string | null>(null);
+  const { recipeId } = useParams(); // Correct way to get params in client components
   const [recipe, setRecipe] = useState<Recipe | null>(null);
 
-  // Ensure window is available before accessing the pathname
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      const pathParts = window.location.pathname.split("/");
-      const id = pathParts[pathParts.length - 1]; // Extract recipeId from URL
-      setRecipeId(id);
-    }
-  }, []);
-
-  useEffect(() => {
-    if (!recipeId) return;
+    if (!recipeId) return; // Ensure recipeId exists before fetching
 
     async function fetchRecipe() {
       try {
@@ -78,7 +73,3 @@ export default function RecipePage() {
     </div>
   );
 }
-
-
-
-

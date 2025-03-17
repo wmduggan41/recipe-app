@@ -1,9 +1,12 @@
-"use client";
+"use client"; // Ensures this page is not pre-rendered
 
-import { useEffect, useState, Suspense } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
+
+// Force this page to be dynamically rendered
+export const dynamic = "force-dynamic";
 
 interface Recipe {
   recipe_id: string;
@@ -15,7 +18,7 @@ interface Recipe {
   instructions: string[];
 }
 
-function RecipeGalleryContent() {
+export default function RecipeGallery() {
   const [recipes, setRecipes] = useState<Recipe[]>([]);
   const searchParams = useSearchParams();
   const category = searchParams.get("category");
@@ -58,12 +61,3 @@ function RecipeGalleryContent() {
     </div>
   );
 }
-
-export default function RecipeGallery() {
-  return (
-    <Suspense fallback={<p className="text-center">Loading recipes...</p>}>
-      <RecipeGalleryContent />
-    </Suspense>
-  );
-}
-
