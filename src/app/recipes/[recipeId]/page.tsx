@@ -1,11 +1,11 @@
 "use client"; // Ensures this page is fully client-rendered
 
 import { useEffect, useState } from "react";
-import { useParams } from "next/navigation"; // Use this instead of passing params as a prop
+import { useParams } from "next/navigation"; // Correct way to get params in client components
 import Image from "next/image";
 import Link from "next/link";
 
-// Force Next.js to dynamically render this page
+// 🚀 Force Next.js to dynamically render this page
 export const dynamic = "force-dynamic";
 
 interface Recipe {
@@ -73,3 +73,5 @@ export default function RecipePage() {
     </div>
   );
 }
+
+
