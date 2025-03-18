@@ -6,7 +6,7 @@ const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Recipe App",
+  title: "Duggan Family Recipe App",
   description: "A simple recipe browsing app",
 };
 
@@ -17,7 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="min-h-screen flex flex-col">
           {/* Navigation bar */}
           <header className="bg-green-700 text-white py-4 text-center text-2xl font-bold">
-            Recipe App
+            Duggan Family App
           </header>
 
           {/* Main content */}
