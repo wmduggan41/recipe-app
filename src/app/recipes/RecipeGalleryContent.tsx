@@ -17,7 +17,7 @@ interface Recipe {
 
 export default function RecipeGalleryContent() {
   const [recipes, setRecipes] = useState<Recipe[]>([]);
-  const searchParams = useSearchParams(); // ✅ This is now inside a client-only file
+  const searchParams = useSearchParams(); // This is now inside a client-only file
   const category = searchParams.get("category");
 
   useEffect(() => {
@@ -36,7 +36,13 @@ export default function RecipeGalleryContent() {
           })
         );
 
-        setRecipes(category ? loadedRecipes.filter((r) => r.meal_type === category) : loadedRecipes);
+        // Adjust filter logic to use the new categories
+        const filteredRecipes =
+          category && category !== "All"
+            ? loadedRecipes.filter((r) => r.meal_type.toLowerCase() === category.toLowerCase())
+            : loadedRecipes;
+
+        setRecipes(filteredRecipes);
       } catch (error) {
         console.error("Error fetching recipes:", error);
       }
