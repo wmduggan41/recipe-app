@@ -17,6 +17,7 @@ interface Recipe {
   servings: number;
   ingredients: { name: string; quantity: string }[];
   instructions: string[];
+  nutrition: { name: string; value: string }[];
   image_url: string;
 }
 
@@ -65,6 +66,20 @@ export default function RecipePage() {
           <li key={idx} className="mb-2">{step}</li>
         ))}
       </ol>
+
+      {/* Nutritional Facts Section */}
+      {recipe.nutrition && recipe.nutrition.length > 0 && (
+        <div className="mt-6">
+          <h2 className="text-2xl font-semibold">Nutritional Facts</h2>
+          <ul className="list-none p-0 mt-2">
+            {recipe.nutrition.map((fact, idx) => (
+              <li key={idx} className="text-black border-b border-gray-300 py-1">
+                <strong>{fact.name}:</strong> {fact.value}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
 
       {/* Back Button */}
       <Link href="/recipes" className="mt-6 inline-block px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-700">
