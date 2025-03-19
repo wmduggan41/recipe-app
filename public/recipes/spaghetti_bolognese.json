@@ -26,6 +26,19 @@
     "Simmer for 20 minutes, stirring occasionally.",
     "Serve sauce over cooked spaghetti."
   ],
+  "nutrition": [
+    {"name": "Calories", "value": "715kcal" },
+    {"name": "Protein", "value": "35g" },
+    {"name": "Carbs", "value": "35g" },
+    {"name": "Fat", "value": "46g" },
+    {"name": "Sodium", "value": "1159mg" },
+    {"name": "Potassium", "value": "946mg" },
+    {"name": "Sugar", "value": "13g" },
+    {"name": "Calcium", "value": "539mg" },
+    {"name": "Iron", "value": "3mg" },
+    {"name": "Cholesterol", "value": "127mg" },
+    {"name": "Fiber", "value": "4g" }
+  ],
   "image_url": "",
   "tags": ["pasta", "dinner", "comfort food"]
 }
