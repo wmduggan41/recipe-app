@@ -38,7 +38,7 @@ export default function RecipeGalleryContent() {
 
         // Adjust filter logic to use the new categories
         const filteredRecipes =
-          category && category !== "All"
+          category && category !== "Breakfast"
             ? loadedRecipes.filter((r) => r.meal_type.toLowerCase() === category.toLowerCase())
             : loadedRecipes;
 
