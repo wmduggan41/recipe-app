@@ -36,6 +36,19 @@
     "Transfer skillet to oven and bake, uncovered, until chicken is cooked through and orzo is tender, about 15 minutes.",
     "Top with feta, lemon zest, lemon juice, dill, and parsley before serving."
   ],
+  "nutrition": [
+    {"name": "Calories", "value": "1031kcal" },
+    {"name": "Protein", "value": "52g" },
+    {"name": "Carbs", "value": "36g" },
+    {"name": "Fat", "value": "70g" },
+    {"name": "Sodium", "value": "1512mg" },
+    {"name": "Potassium", "value": "950mg" },
+    {"name": "Sugar", "value": "4g" },
+    {"name": "Calcium", "value": "248mg" },
+    {"name": "Iron", "value": "4mg" },
+    {"name": "Cholesterol", "value": "311mg" },
+    {"name": "Fiber", "value": "3g" }
+  ],
   "image_url": "",
   "tags": ["one-pan", "chicken", "orzo", "dinner"]
 }
