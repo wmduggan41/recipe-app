@@ -1,0 +1,37 @@
+{
+  "recipe_id": "shakshuka",
+  "name": "Shakshuka",
+  "add_to_grocery_list": false,
+  "meal_type": "Breakfast",
+  "label": "Middle Eastern",
+  "time": { "value": 35, "unit": "mins" },
+  "servings": 4,
+  "ingredients": [
+    { "name": "Extra-virgin olive oil", "quantity": "2 tablespoons" },
+    { "name": "Yellow onion, chopped", "quantity": "1 cup" },
+    { "name": "Red bell pepper, diced", "quantity": "1" },
+    { "name": "Sea salt", "quantity": "1/4 teaspoon" },
+    { "name": "Black pepper", "quantity": "To taste" },
+    { "name": "Garlic cloves, minced", "quantity": "3" },
+    { "name": "Smoked paprika", "quantity": "1/2 teaspoon" },
+    { "name": "Ground cumin", "quantity": "1/2 teaspoon" },
+    { "name": "Crushed tomatoes", "quantity": "28-ounce can" },
+    { "name": "Harissa paste", "quantity": "2 tablespoons" },
+    { "name": "Fresh spinach, chopped", "quantity": "1 cup" },
+    { "name": "Eggs", "quantity": "3 to 5" },
+    { "name": "Crumbled feta cheese", "quantity": "1/3 cup" },
+    { "name": "Fresh parsley leaves", "quantity": "1/4 cup" },
+    { "name": "Avocado, sliced", "quantity": "1" },
+    { "name": "Toasted bread", "quantity": "For serving" }
+  ],
+  "instructions": [
+    "Heat oil over medium heat. Add onion, pepper, salt, and pepper. Cook for 6-8 minutes.",
+    "Reduce heat, add garlic, paprika, and cumin. Stir for 30 seconds.",
+    "Add tomatoes and harissa. Simmer for 15 minutes until thickened.",
+    "Add spinach and stir until wilted. Make wells in the sauce, crack in eggs.",
+    "Cover and cook 5-8 minutes until eggs are set.",
+    "Season with salt, pepper, and top with feta, parsley, and avocado."
+  ],
+  "image_url": "",
+  "tags": ["breakfast", "spicy", "eggs"]
+}
