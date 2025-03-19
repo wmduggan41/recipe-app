@@ -1,0 +1,39 @@
+{
+  "recipe_id": "broccoli_cheddar_soup",
+  "name": "Broccoli Cheddar Soup",
+  "add_to_grocery_list": false,
+  "meal_type": "Dinner",
+  "label": "American",
+  "time": { "value": 35, "unit": "mins" },
+  "servings": 4,
+  "ingredients": [
+    { "name": "Unsalted butter", "quantity": "4 tablespoons" },
+    { "name": "Yellow onion, chopped", "quantity": "1 medium" },
+    { "name": "Sea salt", "quantity": "1/2 teaspoon" },
+    { "name": "Black pepper", "quantity": "To taste" },
+    { "name": "Garlic cloves, chopped", "quantity": "3" },
+    { "name": "All-purpose flour", "quantity": "1/4 cup" },
+    { "name": "Whole milk", "quantity": "2 cups" },
+    { "name": "Vegetable broth", "quantity": "2 cups" },
+    { "name": "Broccoli florets, chopped", "quantity": "3 cups" },
+    { "name": "Carrot, julienned", "quantity": "1 large" },
+    { "name": "Dijon mustard", "quantity": "1/2 teaspoon" },
+    { "name": "Cheddar cheese, shredded", "quantity": "8 ounces" }
+  ],
+  "instructions": [
+    "Melt butter in a large pot over medium heat. Add onion, salt, and pepper. Cook for 5 minutes.",
+    "Add garlic and cook another minute. Sprinkle in flour and whisk continuously for 2 minutes.",
+    "Slowly pour in milk while whisking. Add broth, broccoli, carrot, and mustard.",
+    "Simmer for 15-20 minutes until broccoli is tender.",
+    "Gradually add cheese, stirring after each addition, until melted."
+  ],
+  "nutrition": [
+    { "name": "Calories", "value": "320 kcal" },
+    { "name": "Protein", "value": "12g" },
+    { "name": "Carbohydrates", "value": "24g" },
+    { "name": "Fat", "value": "18g" },
+    { "name": "Sodium", "value": "600mg" }
+  ],
+  "image_url": "",
+  "tags": ["soup", "comfort food", "cheesy"]
+}

@@ -1,0 +1,32 @@
+{
+  "recipe_id": "cheese_enchiladas",
+  "name": "Cheese Enchiladas",
+  "add_to_grocery_list": false,
+  "meal_type": "Dinner",
+  "label": "Mexican",
+  "time": { "value": 50, "unit": "mins" },
+  "servings": 4,
+  "ingredients": [
+    { "name": "Enchilada Sauce", "quantity": "1.5 cups" },
+    { "name": "Corn tortillas", "quantity": "8" },
+    { "name": "Sharp cheddar cheese, shredded", "quantity": "1.25 cups" },
+    { "name": "Monterey Jack cheese, shredded", "quantity": "1.25 cups" },
+    { "name": "Oaxaca cheese, torn", "quantity": "8 ounces" },
+    { "name": "Black beans, drained and rinsed", "quantity": "1 cup" },
+    { "name": "Steamed and chopped spinach", "quantity": "5 ounces" },
+    { "name": "Jalapeño pepper, thinly sliced", "quantity": "1" },
+    { "name": "Fresh cilantro, chopped", "quantity": "1/2 cup" },
+    { "name": "Avocado, diced", "quantity": "1/2" },
+    { "name": "Lime", "quantity": "1/2" }
+  ],
+  "instructions": [
+    "Preheat oven to 350°F. Spread 1/2 cup of enchilada sauce in a baking dish.",
+    "Warm tortillas if needed. Fill with cheese blend, black beans, and spinach.",
+    "Roll tortillas closed and place in the baking dish seam-side down.",
+    "Pour remaining sauce over enchiladas. Top with remaining cheese.",
+    "Bake uncovered for 20 minutes until cheese is melted.",
+    "Remove from oven, top with jalapeño, cilantro, avocado, and lime."
+  ],
+  "image_url": "",
+  "tags": ["dinner", "mexican", "vegetarian"]
+}
