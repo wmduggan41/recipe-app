@@ -32,6 +32,18 @@
     "Slice the rested chicken and arrange on top of the pasta.",
     "Garnish with chopped parsley and additional Parmesan cheese before serving."
   ],
+  "nutrition": [
+    {"name": "Calories", "value": "133kcal" },
+    {"name": "Protein", "value": "14g" },
+    {"name": "Carbs", "value": "6g" },
+    {"name": "Fat", "value": "6g" },
+    {"name": "Sodium", "value": "744mg" },
+    {"name": "Potassium", "value": "163mg" },
+    {"name": "Sugar", "value": "5g" },
+    {"name": "Calcium", "value": "265mg" },
+    {"name": "Iron", "value": "0.3mg" },
+    {"name": "Fiber", "value": "0.2g" }
+  ],
   "image_url": "",
   "tags": ["creamy", "comfort food", "dinner", "quick meal"]
 }
