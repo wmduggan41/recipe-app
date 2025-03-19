@@ -2,7 +2,7 @@
   "recipe_id": "broccoli_cheddar_soup",
   "name": "Broccoli Cheddar Soup",
   "add_to_grocery_list": false,
-  "meal_type": "Dinner",
+  "meal_type": "Soups",
   "label": "American",
   "time": { "value": 35, "unit": "mins" },
   "servings": 4,

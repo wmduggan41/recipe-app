@@ -2,7 +2,7 @@
   "recipe_id": "philly_cheesesteak",
   "name": "Philly Cheesesteak",
   "add_to_grocery_list": false,
-  "meal_type": "Entrees",
+  "meal_type": "Dinner",
   "label": "American",
   "time": { "value": 65, "unit": "mins" },
   "servings": 4,
