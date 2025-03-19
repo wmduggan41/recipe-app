@@ -1,0 +1,35 @@
+{
+  "recipe_id": "spicy_cucumber_margarita",
+  "name": "Spicy Cucumber Margarita",
+  "add_to_grocery_list": false,
+  "meal_type": "Drinks",
+  "label": "Tequila",
+  "time": { "value": 5, "unit": "mins" },
+  "servings": 4,
+  "ingredients": [
+    {"name": "Espolon pure agave tequila", "quantity": "8 oz" },
+    {"name": "Cointreau orange liquor", "quantity": "4 oz" },
+    {"name": "Fresh lime juice", "quantity": "2 oz" },
+    {"name": "Ginger beer", "quantity": "12 oz" },
+    {"name": "Mini cucumber", "quantity": "1 sliced into 16 coins" },
+    {"name": "Small pickeld jalapenos", "quantity": "10 thinly sliced" },
+    {"name": "Lime", "quantity": "1-2 sliced wedged limes" },
+    {"name": "Chili chipotle powder", "quantity": "2 Tbsp" },
+    {"name": "Kosher salt", "quantity": "2 Tbsp, coarse" }
+  ],
+  "instructions": [
+    "Add tequila, lime juice, agave, orange liquor, and cucumber to a blender or capped jug.  Pulse or shake for 1 minute, or until the mixture is smooth.  Strain out the liquid into a cocktail shaker. ",
+    "Add the jalapeno slices, and muddle until the margarita has your desired level of heat (Note: that the longer the jalapenos sit in the mixture, the more they will release their flavor, so heads up!):  Add a handful of ice, and shake the mixture vigorously for a few seconds so that it is chilled.",
+    "Then immediately strain into serving glasses 3/4 full that have been rimmed with salt-chili garnish, filled with ice. Pour remaining 1/4 with ginger beer. Stir in slightly and add optional garnishes of lime wedges, cucumbers, and jalapenos"
+  ],
+  "nutrition": [
+    { "name": "Calories", "value": "240 kcal" },
+    { "name": "Protein", "value": "1g" },
+    { "name": "Carbohydrates", "value": "26g" },
+    { "name": "Fat", "value": "0g" },
+    { "name": "Sodium", "value": "240mg" },
+    { "name": "Sugar", "value": "17g" }
+  ],
+  "image_url": "",
+  "tags": ["intermediate", "tequila", "cointreau"]
+}
