@@ -2,7 +2,7 @@
   "recipe_id": "spaghetti_bolognese",
   "name": "Spaghetti Bolognese",
   "add_to_grocery_list": false,
-  "meal_type": "Entrees",
+  "meal_type": "Dinner",
   "label": "Italian",
   "time": { "value": 45, "unit": "mins" },
   "servings": 4,

@@ -2,7 +2,7 @@
   "recipe_id": "one_pan_chicken_orzo",
   "name": "One-Pan Lemon Chicken & Orzo",
   "add_to_grocery_list": false,
-  "meal_type": "Entrees",
+  "meal_type": "Dinner",
   "label": "Mediterranean",
   "time": { "value": 45, "unit": "mins" },
   "servings": 4,
