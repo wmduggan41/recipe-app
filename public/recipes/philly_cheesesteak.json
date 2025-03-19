@@ -22,6 +22,19 @@
     "Return veggies to skillet and toss to combine with steak. Top with provolone. Cover and cook until cheese is melted, about 3 minutes more.",
     "Using a serrated knife, cut into the long side of each roll, being sure not to cut all the way through. Divide cheesesteak mixture among rolls and serve."
   ],
+  "nutrition": [
+    {"name": "Calories", "value": "771kcal" },
+    {"name": "Protein", "value": "53g" },
+    {"name": "Carbs", "value": "26g" },
+    {"name": "Fat", "value": "48g" },
+    {"name": "Sodium", "value": "994mg" },
+    {"name": "Potassium", "value": "945mg" },
+    {"name": "Sugar", "value": "6g" },
+    {"name": "Calcium", "value": "525mg" },
+    {"name": "Iron", "value": "5mg" },
+    {"name": "Cholesterol", "value": "171mg" },
+    {"name": "Fiber", "value": "4g" }
+  ],
   "image_url": "",
   "tags": ["sandwich", "classic", "beef"]
 }
