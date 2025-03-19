@@ -32,6 +32,19 @@
     "Cover and cook 5-8 minutes until eggs are set.",
     "Season with salt, pepper, and top with feta, parsley, and avocado."
   ],
+  "nutrition": [
+    {"name": "Calories", "value": "771kcal" },
+    {"name": "Protein", "value": "53g" },
+    {"name": "Carbs", "value": "26g" },
+    {"name": "Fat", "value": "48g" },
+    {"name": "Sodium", "value": "994mg" },
+    {"name": "Potassium", "value": "945mg" },
+    {"name": "Sugar", "value": "6g" },
+    {"name": "Calcium", "value": "525mg" },
+    {"name": "Iron", "value": "5mg" },
+    {"name": "Cholesterol", "value": "171mg" },
+    {"name": "Fiber", "value": "4g" }
+  ],
   "image_url": "",
   "tags": ["breakfast", "spicy", "eggs"]
 }
