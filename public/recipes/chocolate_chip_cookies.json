@@ -28,6 +28,15 @@
     "Bake for 9-11 minutes until golden brown.",
     "Cool on a wire rack and enjoy."
   ],
+  "nutrition": [
+    {"name": "Calories", "value": "148kcal" },
+    {"name": "Protein", "value": "1.5g" },
+    {"name": "Carbs", "value": "20g" },
+    {"name": "Fat", "value": "7.4g" },
+    {"name": "Sodium", "value": "93mg" },
+    {"name": "Sugar", "value": "9.9g" },
+    {"name": "Fiber", "value": "0.6g" }
+  ],
   "image_url": "",
   "tags": ["dessert", "baking", "cookies"]
 }

@@ -2,7 +2,7 @@
   "recipe_id": "one_pan_chicken_orzo",
   "name": "One-Pan Lemon Chicken & Orzo",
   "add_to_grocery_list": false,
-  "meal_type": "Entrees",
+  "meal_type": "Dinner",
   "label": "Mediterranean",
   "time": { "value": 45, "unit": "mins" },
   "servings": 4,
@@ -35,6 +35,19 @@
     "Stir in spinach and cream until spinach is wilted. Return chicken to pan skin side up, along with any accumulated juices.",
     "Transfer skillet to oven and bake, uncovered, until chicken is cooked through and orzo is tender, about 15 minutes.",
     "Top with feta, lemon zest, lemon juice, dill, and parsley before serving."
+  ],
+  "nutrition": [
+    {"name": "Calories", "value": "1031kcal" },
+    {"name": "Protein", "value": "52g" },
+    {"name": "Carbs", "value": "36g" },
+    {"name": "Fat", "value": "70g" },
+    {"name": "Sodium", "value": "1512mg" },
+    {"name": "Potassium", "value": "950mg" },
+    {"name": "Sugar", "value": "4g" },
+    {"name": "Calcium", "value": "248mg" },
+    {"name": "Iron", "value": "4mg" },
+    {"name": "Cholesterol", "value": "311mg" },
+    {"name": "Fiber", "value": "3g" }
   ],
   "image_url": "",
   "tags": ["one-pan", "chicken", "orzo", "dinner"]

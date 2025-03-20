@@ -2,7 +2,7 @@
   "recipe_id": "philly_cheesesteak",
   "name": "Philly Cheesesteak",
   "add_to_grocery_list": false,
-  "meal_type": "Entrees",
+  "meal_type": "Dinner",
   "label": "American",
   "time": { "value": 65, "unit": "mins" },
   "servings": 4,
@@ -21,6 +21,19 @@
     "In the same skillet over medium-high heat, heat remaining 1 tablespoon oil. Cook steak, turning occasionally, until desired degree of doneness, about 5 minutes; season with salt and pepper.",
     "Return veggies to skillet and toss to combine with steak. Top with provolone. Cover and cook until cheese is melted, about 3 minutes more.",
     "Using a serrated knife, cut into the long side of each roll, being sure not to cut all the way through. Divide cheesesteak mixture among rolls and serve."
+  ],
+  "nutrition": [
+    {"name": "Calories", "value": "771kcal" },
+    {"name": "Protein", "value": "53g" },
+    {"name": "Carbs", "value": "26g" },
+    {"name": "Fat", "value": "48g" },
+    {"name": "Sodium", "value": "994mg" },
+    {"name": "Potassium", "value": "945mg" },
+    {"name": "Sugar", "value": "6g" },
+    {"name": "Calcium", "value": "525mg" },
+    {"name": "Iron", "value": "5mg" },
+    {"name": "Cholesterol", "value": "171mg" },
+    {"name": "Fiber", "value": "4g" }
   ],
   "image_url": "",
   "tags": ["sandwich", "classic", "beef"]

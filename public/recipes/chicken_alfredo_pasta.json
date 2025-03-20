@@ -1,8 +1,8 @@
 {
   "recipe_id": "chicken_alfredo_pasta",
-  "name": "Chicken Alfredo Pasta",
+  "name": "Chicken Cottage Cheese Alfredo Pasta",
   "add_to_grocery_list": false,
-  "meal_type": "Entrees",
+  "meal_type": "Dinner",
   "label": "Italian",
   "time": {
     "value": 40,
@@ -14,23 +14,40 @@
     {"name": "Boneless, skinless chicken breasts", "quantity": "2 (about 1 pound total)"},
     {"name": "Kosher salt", "quantity": "1 teaspoon, divided"},
     {"name": "Freshly ground black pepper", "quantity": "1/2 teaspoon, divided"},
+    {"name": "Italian seasoning", "quantity": "1-2 tablespoons"},
+    {"name": "Paprika", "quantity": "1-2 tablespoons"},
+    {"name": "Arrowroot powder", "quantity": "1 tablespoons"},
     {"name": "Canola oil", "quantity": "2 tablespoons"},
-    {"name": "European-style unsalted butter", "quantity": "8 tablespoons (1 stick), divided"},
+    {"name": "Unsalted butter", "quantity": "8 tablespoons (1 stick), divided"},
     {"name": "Garlic", "quantity": "2 cloves, minced"},
-    {"name": "Heavy cream", "quantity": "1 cup"},
+    {"name": "Cottage cheese", "quantity": "1 cup"},
+    {"name": "2% Low-fat milk", "quantity": "1 cup"},
     {"name": "Finely grated Parmesan cheese", "quantity": "1 cup (2 1/2 ounces), plus more for serving"},
     {"name": "Freshly grated nutmeg", "quantity": "1/4 teaspoon"},
-    {"name": "Coarsely chopped fresh parsley leaves", "quantity": "For serving"}
+    {"name": "Spinach", "quantity": "2 cups"}
   ],
   "instructions": [
-    "Bring a large pot of salted water to a boil and cook the fettuccine according to package instructions until al dente. Drain and set aside.",
-    "Season the chicken breasts with 1/2 teaspoon kosher salt and 1/4 teaspoon black pepper.",
-    "In a large skillet, heat canola oil over medium-high heat. Add the chicken and cook for 5-6 minutes per side, or until golden brown and cooked through. Remove from the skillet and let rest before slicing into strips.",
-    "In the same skillet, melt 6 tablespoons of butter over medium heat. Add minced garlic and sauté until fragrant, about 1 minute.",
-    "Pour in the heavy cream and bring to a simmer. Reduce heat and stir in Parmesan cheese, nutmeg, and the remaining salt and pepper. Cook until the sauce thickens slightly, about 3-4 minutes.",
+    "Bring a large pot of salted water to a boil and cook your past choice according to package instructions until al dente. Drain but keep 1 cup of pasta water (in case needed for sauce later) and set aside.",
+    "Pin-roll the chicken (for juicy taste) then season both sides with Italian seasoning, paprika, kosher salt, and black pepper.",
+    "In a blender, mix in the Cottage cheese, milk, parmesan cheese, and arrowroot powder, and nutmeg (about 60 seconds or until creamy) and set aside.",
+    "In a large skillet, heat canola oil over medium-high heat. Add the chicken and cook for 5-6 minutes per side, or until golden brown and cooked through (internal temp of 165). Remove from the skillet and let rest before slicing into strips.",
+    "In the same skillet, melt butter over medium heat. Add minced garlic and sauté until fragrant, about 1 minute.",
+    "Pour in the blended creamy sauce and bring to a simmer. Add in spinach and reduce heat, continuously stirring (add salt and pepper until desired). Cook until the sauce thickens slightly, about 3-4 minutes.",
     "Add the cooked pasta to the skillet and toss to coat in the sauce.",
     "Slice the rested chicken and arrange on top of the pasta.",
-    "Garnish with chopped parsley and additional Parmesan cheese before serving."
+    "Garnish with additional Parmesan cheese before serving."
+  ],
+  "nutrition": [
+    {"name": "Calories", "value": "133kcal" },
+    {"name": "Protein", "value": "14g" },
+    {"name": "Carbs", "value": "6g" },
+    {"name": "Fat", "value": "6g" },
+    {"name": "Sodium", "value": "744mg" },
+    {"name": "Potassium", "value": "163mg" },
+    {"name": "Sugar", "value": "5g" },
+    {"name": "Calcium", "value": "265mg" },
+    {"name": "Iron", "value": "0.3mg" },
+    {"name": "Fiber", "value": "0.2g" }
   ],
   "image_url": "",
   "tags": ["creamy", "comfort food", "dinner", "quick meal"]
