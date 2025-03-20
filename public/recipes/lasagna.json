@@ -51,6 +51,6 @@
     { "name": "Iron", "value": "3mg" },
     { "name": "Potassium", "value": "946mg" }
   ],
-  "image_url": "/images/lasagna.jpg",
+  "image_url": "",
   "tags": ["pasta", "baked", "comfort food"]
 }

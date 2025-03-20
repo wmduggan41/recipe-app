@@ -67,19 +67,21 @@ export default function RecipePage() {
         ))}
       </ol>
 
-      {/* Nutritional Facts Section */}
-      {recipe.nutrition && recipe.nutrition.length > 0 && (
-        <div className="mt-6">
-          <h2 className="text-2xl font-semibold">Nutritional Facts</h2>
-          <ul className="list-none p-0 mt-2">
-            {recipe.nutrition.map((fact, idx) => (
-              <li key={idx} className="text-black border-b border-gray-300 py-1">
-                <strong>{fact.name}:</strong> {fact.value}
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
+{/* Nutritional Facts Section */}
+{recipe.nutrition && recipe.nutrition.length > 0 && (
+  <div className="mt-6">
+    <h2 className="text-2xl font-semibold mb-3">Nutritional Facts</h2>
+    <ul className="w-full max-w-md mx-auto border border-gray-300 rounded-lg p-4">
+      {recipe.nutrition.map((fact, idx) => (
+        <li key={idx} className="flex justify-between border-b last:border-b-0 py-2">
+          <span className="font-medium text-normal-700">{fact.name}</span>
+          <span className="text-normal-900">{fact.value}</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+)}
+
 
       {/* Back Button */}
       <Link href="/recipes" className="mt-6 inline-block px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-700">
@@ -88,5 +90,7 @@ export default function RecipePage() {
     </div>
   );
 }
+
+
 
 
