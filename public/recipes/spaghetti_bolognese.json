@@ -2,14 +2,14 @@
   "recipe_id": "spaghetti_bolognese",
   "name": "Spaghetti Bolognese",
   "add_to_grocery_list": false,
-  "meal_type": "Entrees",
+  "meal_type": "Dinner",
   "label": "Italian",
   "time": { "value": 45, "unit": "mins" },
   "servings": 4,
   "ingredients": [
     { "name": "Spaghetti", "quantity": "12 ounces" },
     { "name": "Ground beef", "quantity": "1 pound" },
-    { "name": "Onion", "quantity": "1, diced" },
+    { "name": "Onion", "quantity": "1 diced" },
     { "name": "Garlic", "quantity": "2 cloves, minced" },
     { "name": "Tomato paste", "quantity": "2 tablespoons" },
     { "name": "Canned tomatoes", "quantity": "1 can (28 ounces)" },
@@ -25,6 +25,19 @@
     "Pour in canned tomatoes, Italian seasoning, salt, and pepper.",
     "Simmer for 20 minutes, stirring occasionally.",
     "Serve sauce over cooked spaghetti."
+  ],
+  "nutrition": [
+    {"name": "Calories", "value": "715kcal" },
+    {"name": "Protein", "value": "35g" },
+    {"name": "Carbs", "value": "35g" },
+    {"name": "Fat", "value": "46g" },
+    {"name": "Sodium", "value": "1159mg" },
+    {"name": "Potassium", "value": "946mg" },
+    {"name": "Sugar", "value": "13g" },
+    {"name": "Calcium", "value": "539mg" },
+    {"name": "Iron", "value": "3mg" },
+    {"name": "Cholesterol", "value": "127mg" },
+    {"name": "Fiber", "value": "4g" }
   ],
   "image_url": "",
   "tags": ["pasta", "dinner", "comfort food"]

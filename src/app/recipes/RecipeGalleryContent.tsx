@@ -1,4 +1,4 @@
-"use client"; // Ensures this component is fully client-rendered
+"use client";
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
@@ -12,13 +12,12 @@ interface Recipe {
   label: string;
   time: { value: number; unit: string };
   image_url: string;
-  instructions: string[];
 }
 
 export default function RecipeGalleryContent() {
   const [recipes, setRecipes] = useState<Recipe[]>([]);
-  const searchParams = useSearchParams(); // ✅ This is now inside a client-only file
-  const category = searchParams.get("category");
+  const searchParams = useSearchParams();
+  const category = searchParams.get("category")?.toLowerCase().trim(); // Normalize category input
 
   useEffect(() => {
     async function fetchRecipes() {
@@ -36,7 +35,13 @@ export default function RecipeGalleryContent() {
           })
         );
 
-        setRecipes(category ? loadedRecipes.filter((r) => r.meal_type === category) : loadedRecipes);
+        // Normalize JSON meal types for filtering
+        const filteredRecipes =
+          category && category !== "all"
+            ? loadedRecipes.filter((r) => r.meal_type.toLowerCase().trim() === category)
+            : loadedRecipes;
+
+        setRecipes(filteredRecipes);
       } catch (error) {
         console.error("Error fetching recipes:", error);
       }
