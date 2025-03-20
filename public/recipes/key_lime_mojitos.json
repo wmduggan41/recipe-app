@@ -1,0 +1,33 @@
+{
+  "recipe_id": "key_lime_mojitos",
+  "name": "Key Lime Mojitos",
+  "add_to_grocery_list": false,
+  "meal_type": "Drinks",
+  "label": "Rum",
+  "time": { "value": 5, "unit": "mins" },
+  "servings": 2,
+  "ingredients": [
+    {"name": "Crushed graham crackers", "quantity": "1/4 cup" },
+    {"name": "Simple syrup", "quantity": "3 Tbsp" },
+    {"name": "Fresh mint leaves", "quantity": "1/4 cup" },
+    {"name": "Fresh key lime juice", "quantity": "3 Tbsp" },
+    {"name": "Havana Club Añejo Blanco", "quantity": "4 oz" },
+    {"name": "Heavy cream", "quantity": "1 Tbsp" },
+    {"name": "Ice, Key lime rounds", "quantity": "For serving" }
+  ],
+  "instructions": [
+    "Place crackers on a plate. Pour simple syrup onto another plate. Dip rims of 2 glasses into simple syrup, then into crackers.",
+    "In a cocktail shaker, muddle mint and lime juice. Fill shaker with ice and add rum, cream, and 3 tablespoons simple syrup. Vigorously shake until outside of shaker is very frosty, about 20 seconds.",
+    "Fill glasses with ice and strain mojito into prepared glasses. Garnish with more mint and a Key lime round."
+  ],
+  "nutrition": [
+    { "name": "Calories", "value": "302 cal" },
+    { "name": "Protein", "value": "2g" },
+    { "name": "Carbohydrates", "value": "34g" },
+    { "name": "Fat", "value": "4g" },
+    { "name": "Sodium", "value": "79mg" },
+    { "name": "Sugar", "value": "25g" }
+  ],
+  "image_url": "",
+  "tags": ["easy", "rum"]
+}

@@ -5,7 +5,7 @@ import { useParams } from "next/navigation"; // Correct way to get params in cli
 import Image from "next/image";
 import Link from "next/link";
 
-// 🚀 Force Next.js to dynamically render this page
+// Force Next.js to dynamically render this page
 export const dynamic = "force-dynamic";
 
 interface Recipe {
@@ -17,6 +17,7 @@ interface Recipe {
   servings: number;
   ingredients: { name: string; quantity: string }[];
   instructions: string[];
+  nutrition: { name: string; value: string }[];
   image_url: string;
 }
 
@@ -66,6 +67,22 @@ export default function RecipePage() {
         ))}
       </ol>
 
+{/* Nutritional Facts Section */}
+{recipe.nutrition && recipe.nutrition.length > 0 && (
+  <div className="mt-6">
+    <h2 className="text-2xl font-semibold mb-3">Nutritional Facts</h2>
+    <ul className="w-full max-w-md mx-auto border border-gray-300 rounded-lg p-4">
+      {recipe.nutrition.map((fact, idx) => (
+        <li key={idx} className="flex justify-between border-b last:border-b-0 py-2">
+          <span className="font-medium text-normal-700">{fact.name}</span>
+          <span className="text-normal-900">{fact.value}</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+)}
+
+
       {/* Back Button */}
       <Link href="/recipes" className="mt-6 inline-block px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-700">
         ⬅ Back to Recipes
@@ -73,5 +90,7 @@ export default function RecipePage() {
     </div>
   );
 }
+
+
 
 
