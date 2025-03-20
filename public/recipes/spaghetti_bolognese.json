@@ -9,7 +9,7 @@
   "ingredients": [
     { "name": "Spaghetti", "quantity": "12 ounces" },
     { "name": "Ground beef", "quantity": "1 pound" },
-    { "name": "Onion", "quantity": "1, diced" },
+    { "name": "Onion", "quantity": "1 diced" },
     { "name": "Garlic", "quantity": "2 cloves, minced" },
     { "name": "Tomato paste", "quantity": "2 tablespoons" },
     { "name": "Canned tomatoes", "quantity": "1 can (28 ounces)" },
