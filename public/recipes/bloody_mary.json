@@ -1,0 +1,38 @@
+{
+  "recipe_id": "bloody_mary",
+  "name": "Bloody Mary",
+  "add_to_grocery_list": false,
+  "meal_type": "Drinks",
+  "label": "Vodka",
+  "time": { "value": 5, "unit": "mins" },
+  "servings": 1,
+  "ingredients": [
+    {"name": "Lemon wedges", "quantity": "2, divided" },
+    {"name": "Tomato juice", "quantity": "4 oz" },
+    {"name": "Vodka", "quantity": "2 oz" },
+    {"name": "Fresh lemon juice", "quantity": "2 tsp" },
+    {"name": "Horseradish", "quantity": "2 tsp" },
+    {"name": "Worcestershire sauce", "quantity": "1 tsp" },
+    {"name": "Celery salt", "quantity": "1/4 tsp" },
+    {"name": "Fresh ground pepper", "quantity": "1/4 tsp" },
+    {"name": "Hot sauce", "quantity": "1/4 tsp" },
+    {"name": "Kosher salt", "quantity": "1/4 tsp" },
+    {"name": "Celery stalks and olives", "quantity": "For serving" },
+    {"name": "Bloody mary salt", "quantity": "Garnish glass" }
+  ],
+  "instructions": [
+    "Pour Bloody Mary salt onto a shallow plate. Rub a lemon wedge around rim of a Collins glass, then dip into salt.",
+    "In a cocktail shaker, combine tomato juice, vodka, lemon juice, horseradish, Worcestershire, celery salt, pepper, hot sauce, and kosher salt. Fill shaker with ice and vigorously shake until outside of shaker is very frosty, about 20 seconds.",
+    "Pour into prepared glass. Garnish with celery stalk, olives, and remaining lemon wedge."
+  ],
+  "nutrition": [
+    { "name": "Calories", "value": "209 kcal" },
+    { "name": "Protein", "value": "2g" },
+    { "name": "Carbohydrates", "value": "9g" },
+    { "name": "Fat", "value": "4g" },
+    { "name": "Sodium", "value": "689mg" },
+    { "name": "Sugar", "value": "5g" }
+  ],
+  "image_url": "",
+  "tags": ["easy", "vodka"]
+}
