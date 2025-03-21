@@ -1,5 +1,13 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# editor and System files
+.idea/
+.vscode/
+.DS_Store
+*.log
+*.lock
+*.idx/
+
 # dependencies
 /node_modules
 /.pnp
@@ -28,6 +36,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+yarn.lock
+.npm/
+pnpm-lock.yaml
 .pnpm-debug.log*
 
 # env files (can opt-in for committing if needed)
