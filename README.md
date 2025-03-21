@@ -1,3 +1,29 @@
+## Current App Architecture & Planning
+
+```
+/src
+├── app
+│   ├── page.tsx                 → Homepage (welcome screen)&#8203;:contentReference[oaicite:0]{index=0}
+│   ├── layout.tsx              → Root layout with header/footer&#8203;:contentReference[oaicite:1]{index=1}
+│   └── recipes/
+│       ├── page.tsx            → Gallery of recipes (dynamically loaded)&#8203;:contentReference[oaicite:2]{index=2}
+│       └── [recipeId]/page.tsx → Single recipe page with ingredients&#8203;:contentReference[oaicite:3]{index=3}
+│   └── grocery-list/
+│       └── page.tsx            → Grocery list display with print/clear
+│
+├── context
+│   └── GroceryListContext.tsx  → Global state & Firebase sync
+│
+├── components
+│   └── RecipeGalleryContent.tsx → Displays grid of recipes&#8203;:contentReference[oaicite:4]{index=4}
+│   └── RecipeLayoutContent.tsx  → Wrapper with filter tabs&#8203;:contentReference[oaicite:5]{index=5}
+
+/public/recipes                    → JSON files for each recipe
+
+/globals.css                       → Tailwind styles & theme&#8203;:contentReference[oaicite:6]{index=6}
+```
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
