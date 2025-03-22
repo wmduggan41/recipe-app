@@ -13,6 +13,11 @@ export default function Home() {
       <Link href="/recipes" className="mt-6 px-6 py-3 bg-green-700 text-white rounded-lg hover:bg-green-800">
         View Recipes
       </Link>
+      <Link href="/grocery-list">
+        <button className="mt-4 px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700">
+          🛒 View Grocery List
+        </button>
+      </Link>
     </div>
   );
 }
