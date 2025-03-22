@@ -53,9 +53,21 @@ export default function RecipePage() {
 
       {/* Ingredients Section */}
       <h2 className="text-2xl font-semibold mt-6">Ingredients</h2>
-      <ul className="list-disc pl-6">
+      <ul className="pl-0 mt-2 border-t border-gray-200">
+        <li className="flex justify-between font-semibold text-gray-800 border-b py-2">
+          <span>Ingredient</span>
+          <span className="text-sm text-gray-500">Add to grocery list</span>
+        </li>
         {recipe.ingredients.map((ing, idx) => (
-          <li key={idx}>{ing.quantity} {ing.name}</li>
+          <li key={idx} className="flex justify-between items-center border-b py-2">
+            <span>{ing.quantity} {ing.name}</span>
+            <input
+              type="checkbox"
+              checked={groceryList.some(item => item.name === ing.name)}
+              onChange={(e) => e.target.checked ? addIngredient(ing) : removeIngredient(ing)}
+              className="w-5 h-5 accent-green-600"
+            />
+          </li>
         ))}
       </ul>
 
