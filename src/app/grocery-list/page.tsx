@@ -1,6 +1,6 @@
 "use client";
 
-import { useGroceryList } from "@/context/GroceryListContext";
+import { useGroceryList } from "./context/GroceryListContext";
 
 export default function GroceryListPage() {
   const { groceryList, clearList } = useGroceryList();
