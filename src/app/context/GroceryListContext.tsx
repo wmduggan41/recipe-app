@@ -3,7 +3,7 @@
 import { createContext, useContext, useEffect, useState, ReactNode } from "react";
 import { getDatabase, ref, onValue, set } from "firebase/database";
 import { app } from "@/lib/firebase"; // Use existing app
-import { getAuth } from "firebase/auth";
+// import { getAuth } from "firebase/auth";
 
 const db = getDatabase(app); // Reuse the same initialized app
 
