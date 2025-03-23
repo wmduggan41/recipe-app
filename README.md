@@ -1,26 +1,30 @@
 ## Current App Architecture & Planning
 
 ```
-/src
-├── app
-│   ├── page.tsx                 → Homepage (welcome screen)&#8203;:contentReference[oaicite:0]{index=0}
-│   ├── layout.tsx              → Root layout with header/footer&#8203;:contentReference[oaicite:1]{index=1}
-│   └── recipes/
-│       ├── page.tsx            → Gallery of recipes (dynamically loaded)&#8203;:contentReference[oaicite:2]{index=2}
-│       └── [recipeId]/page.tsx → Single recipe page with ingredients&#8203;:contentReference[oaicite:3]{index=3}
-│   └── grocery-list/
-│       └── page.tsx            → Grocery list display with print/clear
+/public/                    
+├── images/
+│   └── placeholder.jpg          → Placeholder image for all recipes (will be replaced with actual images)
+├── recipes/                    ← Static content (currently file-based recipes)
+|   └── recipeList.json          → Master JSON file listing each recipe_id
+│   └── "individual".json        → Multiple JSON files for each recipe
 │
-├── context
-│   └── GroceryListContext.tsx  → Global state & Firebase sync
-│
-├── components
-│   └── RecipeGalleryContent.tsx → Displays grid of recipes&#8203;:contentReference[oaicite:4]{index=4}
-│   └── RecipeLayoutContent.tsx  → Wrapper with filter tabs&#8203;:contentReference[oaicite:5]{index=5}
-
-/public/recipes                    → JSON files for each recipe
-
-/globals.css                       → Tailwind styles & theme&#8203;:contentReference[oaicite:6]{index=6}
+/src/app
+├── context/
+│   └── GroceryListContext.tsx   → Global state & Firebase sync
+├── grocery-list/
+│   └── page.tsx                 → Grocery list display with print/clear
+├── recipes/
+│   ├── [recipeId]/              → Single recipe page with ingredients
+│   │   └── page.tsx             → Gallery of recipes (dynamically loaded)
+│   ├── components/              
+│   │   └── RecipeGalleryContext.tsx → Displays grid of recipes
+│   │   └── RecipeLayoutProvider.tsx → Wrapper with filter
+│   ├── layout.tsx               
+│   └── page.tsx
+├── styles/
+│   └── globals.css              → Style centralization
+├── layout.tsx                   → Root layout with header/footer
+└── page.tsx                     → Homepage (welcome screen)
 ```
 
 
