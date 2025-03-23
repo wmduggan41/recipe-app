@@ -2,18 +2,10 @@
 
 import { createContext, useContext, useEffect, useState, ReactNode } from "react";
 import { getDatabase, ref, onValue, set } from "firebase/database";
-import { initializeApp } from "firebase/app";
+import { app } from "@/lib/firebase"; // Use existing app
+import { getAuth } from "firebase/auth";
 
-// Your Firebase config
-const firebaseConfig = {
-  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
-  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
-  databaseURL: process.env.NEXT_PUBLIC_FIREBASE_DATABASE_URL,
-  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-};
-
-const app = initializeApp(firebaseConfig);
-const db = getDatabase(app);
+const db = getDatabase(app); // Reuse the same initialized app
 
 interface Ingredient {
   name: string;
@@ -33,7 +25,7 @@ export const GroceryListProvider = ({ children }: { children: ReactNode }) => {
   const [groceryList, setGroceryList] = useState<Ingredient[]>([]);
 
   useEffect(() => {
-    const listRef = ref(db, "groceryList/shared");
+    const listRef = ref(db, "groceryList/shared"); // Update this soon to use per-user path
     const unsubscribe = onValue(listRef, (snapshot) => {
       const data = snapshot.val();
       setGroceryList(data ? Object.values(data) : []);
