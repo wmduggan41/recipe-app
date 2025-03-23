@@ -1,3 +1,37 @@
+## Current App Architecture & Planning
+
+```
+/public/                    
+├── images/
+│   └── placeholder.jpg          → Placeholder image for all recipes (will be replaced with actual images)
+├── recipes/                    ← Static content (currently file-based recipes)
+|   └── recipeList.json          → Master JSON file listing each recipe_id
+│   └── "individual".json        → Multiple JSON files for each recipe
+│
+/src/app
+├── context/
+│   └── GroceryListContext.tsx   → Global state & Firebase sync
+├── grocery-list/
+│   └── page.tsx                 → Grocery list display with print/clear
+├── recipes/
+│   ├── [recipeId]/              → Single recipe page with ingredients
+│   │   └── page.tsx             → Gallery of recipes (dynamically loaded)
+│   ├── components/              
+│   │   └── RecipeGalleryContext.tsx → Displays grid of recipes
+│   │   └── RecipeLayoutProvider.tsx → Wrapper with filter
+│   ├── layout.tsx               
+│   └── page.tsx
+├── styles/
+│   └── globals.css              → Style centralization
+├── layout.tsx                   → Root layout with header/footer
+└── page.tsx                     → Homepage (welcome screen)
+/src/lib
+└── firebase.ts                  → Firebase setup
+/src/context
+└── AuthContext.tsx              → User authentication setup
+```
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

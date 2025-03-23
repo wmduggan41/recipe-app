@@ -1,0 +1,36 @@
+{
+    "recipe_id": "reverse_sear_steak",
+    "name": "Reverse Sear Tomahawk Steak",
+    "add_to_grocery_list": false,
+    "meal_type": "Dinner",
+    "label": "American",
+    "time": { "value": 230, "unit": "mins" },
+    "servings": 3,
+    "ingredients": [
+      { "name": "Tomahawk Steak (2lbs, at least 2 inches thick)", "quantity": "1" },
+      { "name": "Kosher salt", "quantity": "1 Tbsp" },
+      { "name": "Gaby's everyday seasoning", "quantity": "1 Tbsp" },
+      { "name": "Olive oil", "quantity": "" }
+    ],
+    "instructions": [
+      "Dry Brine the Steak: Generously sprinkle kosher salt on one side of the tomahawk steak. Place it on a cooling rack set over a large pan and refrigerate for 2 hours. Flip the steak, salt the other side, and return to the fridge for another 2 hours.",
+      "Season and Prep for Smoking: Brush olive oil over the top and sides of the steak, then season liberally with Gaby’s Everyday Seasoning. Repeat on the other side. The steak is now ready for the smoker.",
+      "Smoke the Steak: Preheat your smoker to 225°F (107°C). Once preheated, place the steak directly on the smoker grate. Smoke for about 1.5 hours, or until the internal temperature reaches 110°F (43°C).",
+      "Sear for Flavor: Remove the steak from the smoker and increase the heat to 550°F (288°C). Sear the steak on the grates until the outside is browned and the internal temperature reaches 130°F (54°C) for medium-rare.",
+      "Rest and Serve:Tent the steak loosely with foil and let it rest for 10 minutes. Slice into ¼-inch thick pieces and serve.", 
+      "Pair with your favorite sides!"
+    ],
+    "nutrition": [
+      {"name": "Calories", "value": "252kcal" },
+      {"name": "Protein", "value": "23g" },
+      {"name": "Fat", "value": "17g" },
+      {"name": "Sodium", "value": "2387mg" },
+      {"name": "Potassium", "value": "351mg" },
+      {"name": "Calcium", "value": "8mg" },
+      {"name": "Iron", "value": "2mg" },
+      {"name": "Cholesterol", "value": "63mg" }
+    ],
+    "image_url": "",
+    "tags": ["dinner", "bbq", "steak"]
+  }
+  
