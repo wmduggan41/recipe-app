@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "next/navigation"; // Correct way to get params in client components
 import Image from "next/image";
 import Link from "next/link";
+import { useGroceryList } from "@/app/context/GroceryListContext"; 
 
 // Force Next.js to dynamically render this page
 export const dynamic = "force-dynamic";
@@ -22,8 +23,9 @@ interface Recipe {
 }
 
 export default function RecipePage() {
-  const { recipeId } = useParams(); // Correct way to get params in client components
+  const { recipeId } = useParams(); // get params in client components
   const [recipe, setRecipe] = useState<Recipe | null>(null);
+  const { groceryList, addIngredient, removeIngredient } = useGroceryList();
 
   useEffect(() => {
     if (!recipeId) return; // Ensure recipeId exists before fetching
