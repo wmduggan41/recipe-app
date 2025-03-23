@@ -25,6 +25,8 @@
 │   └── globals.css              → Style centralization
 ├── layout.tsx                   → Root layout with header/footer
 └── page.tsx                     → Homepage (welcome screen)
+/src/lib
+└── firebase.ts                  → Firebase setup
 ```
 
 
