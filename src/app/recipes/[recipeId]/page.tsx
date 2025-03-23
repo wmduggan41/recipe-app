@@ -73,6 +73,11 @@ export default function RecipePage() {
         ))}
       </ul>
 
+      {/* View Grocery list */}
+      <Link href="/grocery-list" className="mt-4 inline-block text-green-700 underline hover:text-green-900">
+        View Grocery List
+      </Link> 
+
       {/* Instructions Section */}
       <h2 className="text-2xl font-semibold mt-6">Instructions</h2>
       <ol className="list-decimal pl-6">
