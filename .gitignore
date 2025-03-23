@@ -1,56 +1,45 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# editor and System files
+# IDE/editor configs
 .idea/
 .vscode/
-.DS_Store
-*.log
-*.lock
 *.idx/
+*.log
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.*
+# Build outputs
+.next/
+out/
+build/
+
+# Node/yarn/npm deps
+node_modules/
+.pnp
 .yarn/*
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
 
-# testing
-/coverage
+# Env files
+.env*
+!.env.example  
 
-# next.js
-/.next/
-/out/
+# Public placeholder assets
+public/images/placeholder.jpg
 
-# production
-/build
+# Lock files (if you want to clean them)
+yarn.lock
+package-lock.json
+pnpm-lock.yaml
 
-# misc
-.DS_Store
-*.pem
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
 
-# debug
+# Vercel
+.vercel
+
+# Debug logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-yarn.lock
-.npm/
-pnpm-lock.yaml
 .pnpm-debug.log*
-
-# env files (can opt-in for committing if needed)
-.env*
-
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
-node_modules/
-.next/
-public/images/placeholder.jpg
-package-lock.json
