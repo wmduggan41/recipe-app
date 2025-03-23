@@ -27,6 +27,8 @@
 └── page.tsx                     → Homepage (welcome screen)
 /src/lib
 └── firebase.ts                  → Firebase setup
+/src/context
+└── AuthContext.tsx              → User authentication setup
 ```
 
 
