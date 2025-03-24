@@ -1,5 +1,21 @@
-## Current App Architecture & Planning
+## Feature Mapping Status
 
+| Feature             | Status | Notes                    |
+| ------------------- | ------ | ------------------------ |
+| ✅ Personal Cookbook | WIP    | Featured JSON recipe list|
+| ✅ Grocery List | WIP    | Mid-implementation |
+| ✅ Cross-device support | WIP    | Covered by firebase sync |
+| ✅ Mobile friendly | WIP    | Next.js responsive design |
+|⏳ Meal Planner (weekly/monthly) | Next	| Add calendar + meal assignments |
+|⏳ Recipe Search | Next	| By name, ingredient, etc |
+|⏳ Recipe Scaling | Next | Math logic on ingredient servings |
+|⏳ Recipe Sharing | Next | Email/links or app-to-app |
+|⏳ Recipe import from web | Later	| Use scraper or URL metadata API |
+|⏳ Custom Cookbooks (PDF export) | Later	| Use pdf-lib or serverless PDF service |
+|⏳ Scan Recipes (OCR)	| Optional	| Can use Firebase ML Kit or Tesseract.js |
+
+
+## Current App Architecture & Planning
 ```
 /public/                    
 ├── images/
